@@ -44,6 +44,10 @@ export default function GithubProfileCard({prof}) {
             <div className="opp-div">
               <span className="desc-prof">
                 Open for opportunities: {prof.hireable}
+                <br />
+                ☎️: +91 7073396759
+                <br />
+                ✉️: harshsh013@gmail.com
               </span>
             </div>
             <SocialMedia />
