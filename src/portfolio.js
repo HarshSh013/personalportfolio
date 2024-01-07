@@ -156,7 +156,7 @@ const workExperiences = {
     {
       role: "Full Stack Web Developer",
       company: "KS Ventures",
-      companylogo: require("./assets/images/KS.jpg"),
+      companylogo: require("./assets/images/KS.PNG"),
       date: "June 2022 – Aug 2022",
       desc: "Collaborated within an Agile team to develop and integrate webpages using HTML, CSS,JavaScript, and Django, ensuring seamless connections between frontend and backend."
     },
@@ -196,7 +196,7 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/KS.jpg"),
+      image: require("./assets/images/KS.PNG"),
       projectName: "KS Ventures",
       projectDesc: "Developed Front-End and done some Back-End for their website.",
       footerLink: [
