@@ -26,7 +26,7 @@ const greeting = {
     "Passionate about data science by day, and a dedicated gym enthusiast practicing calisthenics by night! 💪 Balancing the world of algorithms and datasets with the discipline of workouts. Always optimizing both code and reps for peak performance. Let's crush those data challenges and fitness goals together! 🏋️‍♂️📊 "
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1qX4PAXE8L7F7x_PCSHH1BjBwWKyRCzFw/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1iYKo9gP2jDyw0ZSzKI2cHIA5IL8qQJZe/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
