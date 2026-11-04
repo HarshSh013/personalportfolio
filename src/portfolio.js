@@ -125,8 +125,8 @@ const educationInfo = {
     {
       schoolName: "J.K.Lakshmipat University",
       logo: require("./assets/images/jklulogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "August 2020 - Present",
+      subHeader: "Bachelor of Technology in Computer Science",
+      duration: "July 2020 – June 2024",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, Game Development ...",
       descBullets: ["Engaged in Various co curricular activities"]
     }
@@ -164,15 +164,64 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Data Scientist",
+      role: "Data Scientist – Salesforce Business Unit",
       company: "Persistent Systems",
       companylogo: require("./assets/images/persistentIcon.png"),
       date: "July 2025 – Present",
-      desc: "Working as a Data Scientist on the Salesforce ecosystem, delivering Data Cloud and Agentforce solutions for clients.",
+      desc: "Combining Salesforce and Python to deliver Data Cloud and Agentforce solutions for enterprise clients.",
       descBullets: [
-        "Building autonomous AI agents with Salesforce Agentforce",
-        "Unifying and modelling customer data with Salesforce Data Cloud (Data 360)",
-        "4x Salesforce Certified: Agentforce Specialist, Data 360 Consultant, Platform Developer, Platform Administrator"
+        "Thermo Fisher Scientific – Agentforce: Designed and developed an Agentforce AI agent solution with topics, agent actions and prompt templates grounded in CRM data, integrating Flows and Apex actions to automate customer and service workflows",
+        "UHG (Optum) – Data Cloud: Implemented Salesforce Data 360 (Data Cloud) from scratch as part of a platform migration, covering data streams, data model mapping, batch and streaming Data Transforms, Identity Resolution, Calculated Insights and segmentation",
+        "Built Data Actions, record-triggered Flows and Apex classes/triggers to activate Data Cloud insights in downstream Salesforce orgs and external systems",
+        "Use Python alongside Salesforce for data preparation, validation and analysis"
+      ]
+    },
+    {
+      role: "Data Scientist",
+      company: "ABHARSH Healthcare",
+      companylogo: require("./assets/images/abharshLogo.png"),
+      date: "July 2024 – June 2025",
+      desc: "Built web, AI and BI solutions for a diagnostics lab.",
+      descBullets: [
+        "Designed, developed and deployed the company website (abharsh.com) with Django",
+        "Built lab software for patient registration and sample management, covering both human and veterinary diagnostics",
+        "Led development of a diagnostic-assistive chatbot using fine-tuned Hugging Face models with LangChain",
+        "Created Power BI reports to streamline lab reporting; planned an Azure cloud migration"
+      ]
+    },
+    {
+      role: "AI and Data Science Engineer",
+      company: "Freelancer.com",
+      companylogo: require("./assets/images/freelancerLogo.png"),
+      date: "Dec 2024 – April 2025",
+      desc: "Delivered AI projects for clients remotely.",
+      descBullets: [
+        "AI-powered question generator for GATE exam prep, reducing manual effort by 60%",
+        "Raspberry Pi-based assistant with speech recognition and computer vision",
+        "Medical chatbot analysing medical history and test reports"
+      ]
+    },
+    {
+      role: "Data Scientist Associate",
+      company: "BlackCoffer",
+      companylogo: require("./assets/images/BC.PNG"),
+      date: "Dec 2023 – July 2024",
+      desc: "Built forecasting, NLP and clustering models for client analytics.",
+      descBullets: [
+        "Time series forecasting with FBProphet, improving viewer retention by 20%",
+        "Glassdoor NLP analytics using Selenium and BeautifulSoup data extraction",
+        "E-commerce insights with KMeans and DBSCAN clustering, increasing sales by 15%"
+      ]
+    },
+    {
+      role: "AI and ML Intern",
+      company: "Coincent (IBM)",
+      companylogo: require("./assets/images/ibm.PNG"),
+      date: "Sept 2022 – Nov 2022",
+      desc: "Built deep learning and computer vision applications.",
+      descBullets: [
+        "Fashion recommender, self-driving car simulation and an AI exam tool (OpenAI API)",
+        "CNN models for pneumonia (ResNet) and skin cancer (VGG-16) detection; satellite imagery for land-use tracking"
       ]
     },
     {
@@ -180,25 +229,7 @@ const workExperiences = {
       company: "KS Ventures",
       companylogo: require("./assets/images/KS.PNG"),
       date: "June 2022 – Aug 2022",
-      desc: "Collaborated within an Agile team to develop and integrate webpages using HTML, CSS,JavaScript, and Django, ensuring seamless connections between frontend and backend."
-    },
-    {
-      role: "AI & ML Intern",
-      company: "Coincent(IBM)",
-      companylogo: require("./assets/images/ibm.PNG"),
-      date: "Sep 2022 – Nov 2022",
-      desc: "Developed a software for recommending user clothes by conducting extensive research on largedatasets and Designed a self-driving car utilizing a vast collection of dash camera images.",
-      descBullets: [
-        "Project I - Clothing Classification on Fashion MNIST",
-        "Project II - Self Driving Car"
-      ]
-    },
-    {
-      role: "Data Scientist Associate",
-      company: "Black Coffer",
-      companylogo: require("./assets/images/BC.PNG"),
-      date: "Dec 2023 – June 2025",
-      desc: "Worked as a Data Scientist Associate."
+      desc: "Collaborated within an Agile team to develop and integrate webpages using HTML, CSS, JavaScript, and Django, ensuring seamless connections between frontend and backend."
     }
   ]
 };
@@ -251,6 +282,17 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/abharshWide.png"),
+      projectName: "ABHARSH Healthcare",
+      projectDesc: "Built the company website and lab management software for both human and veterinary diagnostics.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://abharsh.com/"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/KS.PNG"),
       projectName: "KS Ventures",
       projectDesc: "Developed Front-End and done some Back-End for their website.",
@@ -265,7 +307,7 @@ const bigProjects = {
     {
       image: require("./assets/images/BC.PNG"),
       projectName: "BlackCoffer",
-      projectDesc: "Worked as a Data Scientist Associate.",
+      projectDesc: "Data Scientist Associate (Dec 2023 – July 2024). Forecasting, NLP and clustering models.",
       footerLink: [
         {
           name: "Visit Website",
@@ -403,22 +445,9 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
+  blogs: [],
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -429,14 +458,7 @@ const talkSection = {
     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   ),
 
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
+  talks: [],
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -447,9 +469,7 @@ const podcastSection = {
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
+  podcast: [],
   display: false // Set false to hide this section, defaults to true
 };
 
