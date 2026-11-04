@@ -23,10 +23,10 @@ const greeting = {
   username: "HarshSh013",
   title: "Hi all, I'm Harsh",
   subTitle: emoji(
-    "Passionate about data science by day, and a dedicated gym enthusiast practicing calisthenics by night! 💪 Balancing the world of algorithms and datasets with the discipline of workouts. Always optimizing both code and reps for peak performance. Let's crush those data challenges and fitness goals together! 🏋️‍♂️📊 "
+    "Data Scientist at Persistent Systems, building on Salesforce Data Cloud and Agentforce. ☁️🤖 4x Salesforce Certified (Agentforce Specialist, Data 360 Consultant, Platform Developer, Platform Administrator) and a Trailhead Mountaineer. By night, a dedicated gym enthusiast practicing calisthenics 💪 Always optimizing both code and reps for peak performance! 🏋️‍♂️📊"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1iYKo9gP2jDyw0ZSzKI2cHIA5IL8qQJZe/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1JTxtBLIDvgrHYv6HPNT-5aixiT_cLTaN/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -54,6 +54,7 @@ const skillsSection = {
   title: "What I do",
   subTitle: "Embracing the duality of coding and calisthenics, I excel in crafting code and perfecting my form in the gym – finding strength in both worlds. 💻💪",
   skills: [
+    emoji("☁️ Salesforce & AI Agents: Agentforce | Data Cloud (Data 360) | Apex | Lightning Web Components | SOQL | Flows | Prompt Builder | Platform Administration"),
     emoji("💻 Tech Stack Mastery: SQL | Python | Java | Django | TensorFlow | Unreal Engine 5 | Git | Azure | AWS | GCP | Prompt Engineering"),
     emoji("🎨 Creative Toolbox: Blender | Adobe Suite (Premiere Pro, Photoshop) | Game Development | API Integration | Multimedia Production"),
     emoji("📊 Data Alchemist: Pandas | Kibana | Power Bi | Data Analytics | Cloud Platforms | Full-stack Development | Version Control (Git)"),
@@ -64,6 +65,11 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
 softwareSkills: [
+  { skillName: "Salesforce", fontAwesomeClassname: "fab fa-salesforce" },
+  { skillName: "Agentforce", fontAwesomeClassname: "fas fa-robot" },
+  { skillName: "Data Cloud", fontAwesomeClassname: "fas fa-cloud" },
+  { skillName: "Apex", fontAwesomeClassname: "fas fa-code" },
+  { skillName: "LWC", fontAwesomeClassname: "fas fa-bolt" },
   { skillName: "Unreal Engine 5", fontAwesomeClassname: "fas fa-gamepad" }, // Using a gamepad icon as an alternative
   { skillName: "Unity", fontAwesomeClassname: "fas fa-atom" }, // Using an atom icon as an alternative
   { skillName: "Blender", fontAwesomeClassname: "fas fa-cube" }, // Using a cube icon as an alternative
@@ -133,6 +139,10 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
+      Stack: "Salesforce Data Cloud & Agentforce",
+      progressPercentage: "80%"
+    },
+    {
       Stack: "Python Programming", //Insert stack or technology you have experience in
       progressPercentage: "70%" //Insert relative proficiency in percentage
     },
@@ -153,6 +163,18 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Data Scientist",
+      company: "Persistent Systems",
+      companylogo: require("./assets/images/persistentIcon.png"),
+      date: "July 2025 – Present",
+      desc: "Working as a Data Scientist on the Salesforce ecosystem, delivering Data Cloud and Agentforce solutions for clients.",
+      descBullets: [
+        "Building autonomous AI agents with Salesforce Agentforce",
+        "Unifying and modelling customer data with Salesforce Data Cloud (Data 360)",
+        "4x Salesforce Certified: Agentforce Specialist, Data 360 Consultant, Platform Developer, Platform Administrator"
+      ]
+    },
     {
       role: "Full Stack Web Developer",
       company: "KS Ventures",
@@ -175,8 +197,8 @@ const workExperiences = {
       role: "Data Scientist Associate",
       company: "Black Coffer",
       companylogo: require("./assets/images/BC.PNG"),
-      date: "Dec 2023 – Present",
-      desc: "Currently working as Data Scientist Associate."
+      date: "Dec 2023 – June 2025",
+      desc: "Worked as a Data Scientist Associate."
     }
   ]
 };
@@ -196,6 +218,39 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
+      image: require("./assets/images/persistentLogo.png"),
+      projectName: "Persistent Systems",
+      projectDesc: "Data Scientist delivering Salesforce Data Cloud and Agentforce solutions.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.persistent.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/thermofisherLogo.png"),
+      projectName: "Thermo Fisher Scientific",
+      projectDesc: "Developed Salesforce Agentforce and Data Cloud solutions.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.thermofisher.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/optumLogo.png"),
+      projectName: "UHG (Optum)",
+      projectDesc: "Developed Salesforce Agentforce and Data Cloud solutions.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.optum.com/"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/KS.PNG"),
       projectName: "KS Ventures",
       projectDesc: "Developed Front-End and done some Back-End for their website.",
@@ -210,7 +265,7 @@ const bigProjects = {
     {
       image: require("./assets/images/BC.PNG"),
       projectName: "BlackCoffer",
-      projectDesc: "Currently working as Data Scientist Associate",
+      projectDesc: "Worked as a Data Scientist Associate.",
       footerLink: [
         {
           name: "Visit Website",
@@ -231,6 +286,55 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
+    {
+      title: "Salesforce Certified Agentforce Specialist",
+      subtitle: "Earned December 2025. Design, build and deploy AI agents with Agentforce.",
+      image: require("./assets/images/sf_agentforce.png"),
+      imageAlt: "Salesforce Certified Agentforce Specialist",
+      footerLink: [
+        {name: "Credential", url: "https://www.salesforce.com/trailblazer/harshsh013"},
+        {name: "About Exam", url: "https://trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201"}
+      ]
+    },
+    {
+      title: "Salesforce Certified Data 360 Consultant",
+      subtitle: "Earned September 2026. Design and implement Data Cloud (Data 360) solutions.",
+      image: require("./assets/images/sf_data360.png"),
+      imageAlt: "Salesforce Certified Data 360 Consultant",
+      footerLink: [
+        {name: "Credential", url: "https://www.salesforce.com/trailblazer/harshsh013"},
+        {name: "About Exam", url: "https://trailheadacademy.salesforce.com/certificate/exam-data-cloud---Data-Con-101"}
+      ]
+    },
+    {
+      title: "Salesforce Certified Platform Developer",
+      subtitle: "Earned January 2026. Build custom apps with Apex, LWC and SOQL.",
+      image: require("./assets/images/sf_pd1.png"),
+      imageAlt: "Salesforce Certified Platform Developer",
+      footerLink: [
+        {name: "Credential", url: "https://www.salesforce.com/trailblazer/harshsh013"},
+        {name: "About Exam", url: "https://trailheadacademy.salesforce.com/certificate/exam-platform-dev1---Plat-Dev-201"}
+      ]
+    },
+    {
+      title: "Salesforce Certified Platform Administrator",
+      subtitle: "Earned September 2025. Configure and manage the Salesforce platform.",
+      image: require("./assets/images/sf_admin.png"),
+      imageAlt: "Salesforce Certified Platform Administrator",
+      footerLink: [
+        {name: "Credential", url: "https://www.salesforce.com/trailblazer/harshsh013"},
+        {name: "About Exam", url: "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201"}
+      ]
+    },
+    {
+      title: "Trailhead Mountaineer",
+      subtitle: "56 badges, 31,625 points, 7 trails and 1 superbadge on Salesforce Trailhead.",
+      image: require("./assets/images/trailheadRank.png"),
+      imageAlt: "Trailhead Mountaineer Rank",
+      footerLink: [
+        {name: "Trailblazer Profile", url: "https://www.salesforce.com/trailblazer/harshsh013"}
+      ]
+    },
     {
       title: "Google Cloud Career Readlines",
       subtitle:
